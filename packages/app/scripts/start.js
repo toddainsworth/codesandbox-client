@@ -291,7 +291,7 @@ function runDevServer(port, protocol, index) {
     host: process.env.LOCAL_SERVER
       ? 'localhost'
       : process.env.DEV_DOMAIN || 'codesandbox.test',
-    disableHostCheck: !process.env.LOCAL_SERVER,
+    disableHostCheck: true,
     contentBase: false,
     clientLogLevel: 'warning',
     overlay: true,
